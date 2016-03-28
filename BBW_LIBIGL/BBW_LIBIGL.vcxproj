@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -19,13 +19,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v100</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v100</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -48,19 +48,19 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;IGL_NO_OPENGL;IGL_NO_ANTTWEAKBAR;EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;IGL_NO_OPENGL;IGL_NO_ANTTWEAKBAR;EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>D:\VG_Project\BBW_LIBIGL\BBW_LIBIGL;D:\VG_Project\BBW_LIBIGL\BBW_LIBIGL\igl\tetgen;D:\VG_Project\BBW_LIBIGL\tetgen1.5.0;D:\VG_Project\Eigen_3_2;D:\VG_Project\Eigen_3_2\unsupported;D:\VG_Project\Mosek\7\tools\platform\win32x86\h</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\Code\BBW\BBW_LIBIGL;D:\Code\BBW\BBW_LIBIGL\igl;D:\Code\BBW\BBW_LIBIGL\igl\tetgen;D:\Code\BBW\tetgen1.5.0;D:\Code\Eigen_3_2;D:\Code\Eigen_3_2\unsupported;C:\Program Files (x86)\Mosek\7\tools\platform\win32x86\h</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <Lib>
-      <AdditionalDependencies>tet_d.lib;mosek7_0.lib;mosekscopt7_0.lib</AdditionalDependencies>
+      <AdditionalDependencies>tet.lib;mosek7_1.lib;mosekscopt7_1.lib</AdditionalDependencies>
     </Lib>
     <Lib>
-      <AdditionalLibraryDirectories>D:\VG_Project\BBW_LIBIGL\tetgen1.5.0\bin\Debug;D:\VG_Project\Mosek\7\tools\platform\win32x86\bin</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>D:\Code\BBW\tetgen1.5.0\bin\Debug;C:\Program Files (x86)\Mosek\7\tools\platform\win32x86\bin</AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
