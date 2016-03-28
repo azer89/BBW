@@ -8,9 +8,9 @@ How to build on Windows:
 
 To set up the Visual Studio project, left click on the name of the project. Select "Properties".
 On "C/C++" "General" "Additional Directories":
-* <your-path>\BBW\BBW_LIBIGL;D:\Code\BBW\BBW_LIBIGL\igl
-* <your-path>\BBW\BBW_LIBIGL\igl\tetgen;D:\Code\BBW\tetgen1.5.0
-* <your-path>\Eigen_3_2;D:\Code\Eigen_3_2\unsupported
+* __your-path__\BBW\BBW_LIBIGL;D:\Code\BBW\BBW_LIBIGL\igl
+* __your-path__\BBW\BBW_LIBIGL\igl\tetgen;D:\Code\BBW\tetgen1.5.0
+* __your-path__\Eigen_3_2;D:\Code\Eigen_3_2\unsupported
 * C:\Program Files (x86)\Mosek\7\tools\platform\win32x86\h
 
 On "Librarian" "General" "Additional Dependencies":
@@ -19,5 +19,5 @@ On "Librarian" "General" "Additional Dependencies":
 * mosekscopt7_1.lib
 
 On "Librarian" "General" "Additional Library Directories":
-* <your-path>\BBW\tetgen1.5.0\bin\Debug
+* __your-path__\BBW\tetgen1.5.0\bin\Debug
 * C:\Program Files (x86)\Mosek\7\tools\platform\win32x86\bin
