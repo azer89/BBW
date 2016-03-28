@@ -20,3 +20,4 @@
 *.opensdf
 *.sdf
 *.aip
+/tetgen1.5.0/bin/*
