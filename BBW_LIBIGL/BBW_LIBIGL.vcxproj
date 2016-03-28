@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B8C25E05-5CAE-420B-9DAA-3181405CEAED}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>BBW_LIBIGL</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetExt>_d.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;IGL_NO_OPENGL;IGL_NO_ANTTWEAKBAR;EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\VG_Project\BBW_LIBIGL\BBW_LIBIGL;D:\VG_Project\BBW_LIBIGL\BBW_LIBIGL\igl\tetgen;D:\VG_Project\BBW_LIBIGL\tetgen1.5.0;D:\VG_Project\Eigen_3_2;D:\VG_Project\Eigen_3_2\unsupported;D:\VG_Project\Mosek\7\tools\platform\win32x86\h</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>tet_d.lib;mosek7_0.lib;mosekscopt7_0.lib</AdditionalDependencies>
+    </Lib>
+    <Lib>
+      <AdditionalLibraryDirectories>D:\VG_Project\BBW_LIBIGL\tetgen1.5.0\bin\Debug;D:\VG_Project\Mosek\7\tools\platform\win32x86\bin</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;IGL_NO_OPENGL;IGL_NO_ANTTWEAKBAR;EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\VG_Project\BBW_LIBIGL\BBW_LIBIGL;D:\VG_Project\BBW_LIBIGL\BBW_LIBIGL\igl\tetgen;D:\VG_Project\BBW_LIBIGL\tetgen1.5.0;D:\VG_Project\Eigen_3_2;D:\VG_Project\Eigen_3_2\unsupported;D:\VG_Project\Mosek\7\tools\platform\win32x86\h</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalDependencies>tet.lib;mosek7_0.lib;mosekscopt7_0.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:\VG_Project\BBW_LIBIGL\tetgen1.5.0\bin\Release;D:\VG_Project\Mosek\7\tools\platform\win32x86\bin</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="igl\active_set.h" />
+    <ClInclude Include="igl\basename.h" />
+    <ClInclude Include="igl\bbw\bbw.h" />
+    <ClInclude Include="igl\boundary_conditions.h" />
+    <ClInclude Include="igl\boundary_faces.h" />
+    <ClInclude Include="igl\cat.h" />
+    <ClInclude Include="igl\colon.h" />
+    <ClInclude Include="igl\cotangent.h" />
+    <ClInclude Include="igl\cotmatrix.h" />
+    <ClInclude Include="igl\dirname.h" />
+    <ClInclude Include="igl\edge_lengths.h" />
+    <ClInclude Include="igl\EPS.h" />
+    <ClInclude Include="igl\faces_first.h" />
+    <ClInclude Include="igl\face_occurences.h" />
+    <ClInclude Include="igl\find.h" />
+    <ClInclude Include="igl\full.h" />
+    <ClInclude Include="igl\harwell_boeing.h" />
+    <ClInclude Include="igl\igl_inline.h" />
+    <ClInclude Include="igl\IndexComparison.h" />
+    <ClInclude Include="igl\invert_diag.h" />
+    <ClInclude Include="igl\is_symmetric.h" />
+    <ClInclude Include="igl\launch_medit.h" />
+    <ClInclude Include="igl\list_to_matrix.h" />
+    <ClInclude Include="igl\lu_lagrange.h" />
+    <ClInclude Include="igl\massmatrix.h" />
+    <ClInclude Include="igl\matlab_format.h" />
+    <ClInclude Include="igl\matrix_to_list.h" />
+    <ClInclude Include="igl\max_size.h" />
+    <ClInclude Include="igl\min_quad_with_fixed.h" />
+    <ClInclude Include="igl\min_size.h" />
+    <ClInclude Include="igl\mosek\mosek_guarded.h" />
+    <ClInclude Include="igl\mosek\mosek_quadprog.h" />
+    <ClInclude Include="igl\normalize_row_sums.h" />
+    <ClInclude Include="igl\pathinfo.h" />
+    <ClInclude Include="igl\project_to_line.h" />
+    <ClInclude Include="igl\readMESH.h" />
+    <ClInclude Include="igl\readOBJ.h" />
+    <ClInclude Include="igl\readOFF.h" />
+    <ClInclude Include="igl\readTGF.h" />
+    <ClInclude Include="igl\reorder.h" />
+    <ClInclude Include="igl\repmat.h" />
+    <ClInclude Include="igl\sample_edges.h" />
+    <ClInclude Include="igl\slice.h" />
+    <ClInclude Include="igl\slice_into.h" />
+    <ClInclude Include="igl\SolverStatus.h" />
+    <ClInclude Include="igl\sort.h" />
+    <ClInclude Include="igl\SortableRow.h" />
+    <ClInclude Include="igl\sparse.h" />
+    <ClInclude Include="igl\speye.h" />
+    <ClInclude Include="igl\STR.h" />
+    <ClInclude Include="igl\tetgen\mesh_to_tetgenio.h" />
+    <ClInclude Include="igl\tetgen\mesh_with_skeleton.h" />
+    <ClInclude Include="igl\tetgen\read_into_tetgenio.h" />
+    <ClInclude Include="igl\tetgen\tetgenio_to_tetmesh.h" />
+    <ClInclude Include="igl\tetgen\tetrahedralize.h" />
+    <ClInclude Include="igl\verbose.h" />
+    <ClInclude Include="igl\writeDMAT.h" />
+    <ClInclude Include="igl\writeMESH.h" />
+    <ClInclude Include="igl\writeOFF.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="igl\active_set.cpp" />
+    <ClCompile Include="igl\basename.cpp" />
+    <ClCompile Include="igl\bbw\bbw.cpp" />
+    <ClCompile Include="igl\boundary_conditions.cpp" />
+    <ClCompile Include="igl\boundary_faces.cpp" />
+    <ClCompile Include="igl\cat.cpp" />
+    <ClCompile Include="igl\colon.cpp" />
+    <ClCompile Include="igl\cotangent.cpp" />
+    <ClCompile Include="igl\cotmatrix.cpp" />
+    <ClCompile Include="igl\dirname.cpp" />
+    <ClCompile Include="igl\edge_lengths.cpp" />
+    <ClCompile Include="igl\EPS.cpp" />
+    <ClCompile Include="igl\faces_first.cpp" />
+    <ClCompile Include="igl\face_occurences.cpp" />
+    <ClCompile Include="igl\find.cpp" />
+    <ClCompile Include="igl\full.cpp" />
+    <ClCompile Include="igl\harwell_boeing.cpp" />
+    <ClCompile Include="igl\invert_diag.cpp" />
+    <ClCompile Include="igl\is_symmetric.cpp" />
+    <ClCompile Include="igl\launch_medit.cpp" />
+    <ClCompile Include="igl\list_to_matrix.cpp" />
+    <ClCompile Include="igl\lu_lagrange.cpp" />
+    <ClCompile Include="igl\massmatrix.cpp" />
+    <ClCompile Include="igl\matlab_format.cpp" />
+    <ClCompile Include="igl\matrix_to_list.cpp" />
+    <ClCompile Include="igl\max_size.cpp" />
+    <ClCompile Include="igl\min_quad_with_fixed.cpp" />
+    <ClCompile Include="igl\min_size.cpp" />
+    <ClCompile Include="igl\mosek\mosek_guarded.cpp" />
+    <ClCompile Include="igl\mosek\mosek_quadprog.cpp" />
+    <ClCompile Include="igl\normalize_row_sums.cpp" />
+    <ClCompile Include="igl\pathinfo.cpp" />
+    <ClCompile Include="igl\project_to_line.cpp" />
+    <ClCompile Include="igl\readMESH.cpp" />
+    <ClCompile Include="igl\readOBJ.cpp" />
+    <ClCompile Include="igl\readOFF.cpp" />
+    <ClCompile Include="igl\readTGF.cpp" />
+    <ClCompile Include="igl\reorder.cpp" />
+    <ClCompile Include="igl\repmat.cpp" />
+    <ClCompile Include="igl\sample_edges.cpp" />
+    <ClCompile Include="igl\slice.cpp" />
+    <ClCompile Include="igl\slice_into.cpp" />
+    <ClCompile Include="igl\sort.cpp" />
+    <ClCompile Include="igl\sparse.cpp" />
+    <ClCompile Include="igl\speye.cpp" />
+    <ClCompile Include="igl\tetgen\mesh_to_tetgenio.cpp" />
+    <ClCompile Include="igl\tetgen\mesh_with_skeleton.cpp" />
+    <ClCompile Include="igl\tetgen\read_into_tetgenio.cpp" />
+    <ClCompile Include="igl\tetgen\tetgenio_to_tetmesh.cpp" />
+    <ClCompile Include="igl\tetgen\tetrahedralize.cpp" />
+    <ClCompile Include="igl\writeDMAT.cpp" />
+    <ClCompile Include="igl\writeMESH.cpp" />
+    <ClCompile Include="igl\writeOFF.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

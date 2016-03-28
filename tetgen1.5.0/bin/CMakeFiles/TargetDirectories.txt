@@ -1,0 +1,4 @@
+D:/VG_Project/BBW_LIBIGL/tetgen1.5.0/bin/CMakeFiles/ALL_BUILD.dir
+D:/VG_Project/BBW_LIBIGL/tetgen1.5.0/bin/CMakeFiles/ZERO_CHECK.dir
+D:/VG_Project/BBW_LIBIGL/tetgen1.5.0/bin/CMakeFiles/tet.dir
+D:/VG_Project/BBW_LIBIGL/tetgen1.5.0/bin/CMakeFiles/tetgen.dir

@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\IGL Core">
+      <UniqueIdentifier>{8940b420-b9f3-48b7-a83a-0497a41d090b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IGL Core">
+      <UniqueIdentifier>{435203c8-2ab4-4525-96bf-94ccb44addac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tetgen">
+      <UniqueIdentifier>{69f63c0c-38cf-4db1-ada9-43c8e53d5401}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tetgen">
+      <UniqueIdentifier>{ad27dcd9-f932-469e-ac12-541af927d9b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Mosek">
+      <UniqueIdentifier>{c0ad67a9-467e-4805-81f2-0e2d36355a51}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Mosek">
+      <UniqueIdentifier>{c711fa0c-c025-44f9-952f-28af2eca1bbd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="igl\bbw\bbw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\active_set.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\cat.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\colon.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\cotangent.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\cotmatrix.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\edge_lengths.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\EPS.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\find.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\full.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\igl_inline.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\invert_diag.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\is_symmetric.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\lu_lagrange.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\matlab_format.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\min_quad_with_fixed.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\normalize_row_sums.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\repmat.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\slice.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\slice_into.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\SolverStatus.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\sparse.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\speye.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\STR.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\verbose.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\massmatrix.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\pathinfo.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\dirname.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\basename.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\readOBJ.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\list_to_matrix.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\max_size.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\min_size.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\readOFF.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\readMESH.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\faces_first.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\readTGF.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\launch_medit.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\boundary_conditions.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\project_to_line.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\writeDMAT.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\writeMESH.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\matrix_to_list.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\tetgen\mesh_to_tetgenio.h">
+      <Filter>Header Files\Tetgen</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\tetgen\mesh_with_skeleton.h">
+      <Filter>Header Files\Tetgen</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\tetgen\read_into_tetgenio.h">
+      <Filter>Header Files\Tetgen</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\tetgen\tetgenio_to_tetmesh.h">
+      <Filter>Header Files\Tetgen</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\tetgen\tetrahedralize.h">
+      <Filter>Header Files\Tetgen</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\sample_edges.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\writeOFF.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\boundary_faces.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\face_occurences.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\sort.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\SortableRow.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\reorder.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\IndexComparison.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\mosek\mosek_guarded.h">
+      <Filter>Header Files\Mosek</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\mosek\mosek_quadprog.h">
+      <Filter>Header Files\Mosek</Filter>
+    </ClInclude>
+    <ClInclude Include="igl\harwell_boeing.h">
+      <Filter>Header Files\IGL Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="igl\bbw\bbw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\active_set.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\cat.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\colon.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\cotangent.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\cotmatrix.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\edge_lengths.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\EPS.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\find.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\full.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\invert_diag.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\is_symmetric.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\lu_lagrange.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\matlab_format.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\min_quad_with_fixed.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\normalize_row_sums.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\repmat.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\slice.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\slice_into.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\sparse.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\speye.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\massmatrix.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\pathinfo.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\dirname.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\basename.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\readOBJ.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\list_to_matrix.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\max_size.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\min_size.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\readOFF.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\readMESH.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\faces_first.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\readTGF.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\launch_medit.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\boundary_conditions.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\project_to_line.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\writeDMAT.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\writeMESH.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\matrix_to_list.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\tetgen\mesh_to_tetgenio.cpp">
+      <Filter>Source Files\Tetgen</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\tetgen\mesh_with_skeleton.cpp">
+      <Filter>Source Files\Tetgen</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\tetgen\read_into_tetgenio.cpp">
+      <Filter>Source Files\Tetgen</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\tetgen\tetgenio_to_tetmesh.cpp">
+      <Filter>Source Files\Tetgen</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\tetgen\tetrahedralize.cpp">
+      <Filter>Source Files\Tetgen</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\sample_edges.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\writeOFF.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\boundary_faces.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\face_occurences.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\sort.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\reorder.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\mosek\mosek_guarded.cpp">
+      <Filter>Source Files\Mosek</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\mosek\mosek_quadprog.cpp">
+      <Filter>Source Files\Mosek</Filter>
+    </ClCompile>
+    <ClCompile Include="igl\harwell_boeing.cpp">
+      <Filter>Source Files\IGL Core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>
