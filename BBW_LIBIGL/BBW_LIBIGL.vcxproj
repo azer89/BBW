@@ -51,6 +51,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;IGL_NO_OPENGL;IGL_NO_ANTTWEAKBAR;EIGEN_YES_I_KNOW_SPARSE_MODULE_IS_NOT_STABLE_YET;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
       <AdditionalIncludeDirectories>D:\Code\BBW\BBW_LIBIGL;D:\Code\BBW\BBW_LIBIGL\igl;D:\Code\BBW\BBW_LIBIGL\igl\tetgen;D:\Code\BBW\tetgen1.5.0;D:\Code\Eigen_3_2;D:\Code\Eigen_3_2\unsupported;C:\Program Files (x86)\Mosek\7\tools\platform\win32x86\h</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
